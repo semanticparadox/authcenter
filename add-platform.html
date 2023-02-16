@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="nav-info">
+            <div id="userName">
+                <span class="nav-info_title">Имя</span>
+                <span class="nav-info_text">Иван Иванов</span>
+            </div>
+            <div id="userEmail">
+                <span class="nav-info_title">Почта</span>
+                <span class="nav-info_text">yandex@yandex.ru</span>
+            </div>
+            <div id="userRole">
+                <span class="nav-info_title">Роль</span>
+                <span class="nav-info_text">Администратор</span>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <a id="addProjectBtn" href="#">Создать</a>
+            <a id="quitBtn" href="#">Выйти</a>
+        </div>
+    </nav>
+    <main>
+        <div class="main-menu">
+            <a class="backBtn" href="#">Назад</a>
+        </div>
+        <div class="add-platform">
+            <div class="form-header">
+                <h1>Добавление платформы</h1>
+            </div>
+            
+            <div class="form-body">
+                <form action="#">
+                    <div class="form-group">
+                        <div>
+                            <label for="title">Название</label>
+                            <input type="text" name="title" id="title">
+        
+                            <label for="api">Ссылка API</label>
+                            <input type="text" name="api" id="api">
+        
+                            <label for="secret">Секретный ключ</label>
+                            <input type="text" name="secret" id="secret">
+
+                            <label for="file">Загрузка файла</label>
+                            <input type="file" name="file" id="file">
+                        </div>
+                        <div>
+                            <h2 class="form-title">Дополнительные поля</h2>
+                            <input type="button" value="Добавить поле">
+                        </div>
+                    </div>
+
+                    <button>Создать</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
